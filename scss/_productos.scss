@@ -2,7 +2,8 @@
     max-width: 1180px;
     margin: 0 auto;
     h2{@extend %subtitulos;
-    }}
+    }
+}
     .productosDestacados {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -19,7 +20,9 @@
         background: $link-hover-color;
         transition: .5s;
         transform: scale(1.1);
-        transition: .5s;}}}
+        transition: .5s;}
+    }
+}
 
 @media screen and (max-width: 764px) {
 .productosDestacados {
