@@ -1,0 +1,45 @@
+body{font-family: 'Roboto', sans-serif;}
+.index{ overflow: hidden;
+    display: flex;
+    @extend %centro;
+    flex-direction: column;
+        h3{ position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @extend %boton;}
+        h1{text-align: center;}
+            .bton{font-size: 1em;
+            background-color: #74cbc7;
+            color: white;
+        font-weight: bold;}
+        p{padding-bottom: 10px;}
+                .presentacionProd{background-color:  map-get($fondoSection , $key:fondo1 );
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas:"imgIndex ."
+                    ". textoIndex";
+                    padding: 15px;
+                    @extend %centro;
+                    text-align: center;
+                    .imgIndex{grid-area: imgIndex;
+                    .textoIndex{grid-area: textoIndex;
+                    }
+                }
+            }
+            .productosIndex{&:hover{
+                transform: scale(1.1);
+                transition: .5s;}}
+    .bton{ @extend %boton;
+        text-decoration: none;
+    }}
+
+main{
+    .separadorIndex{
+        padding: 23px  19px;
+        @extend %index;
+        h2{@extend %subtitulos; padding-bottom: 10px;}
+    p{text-align: center;
+    }}}
